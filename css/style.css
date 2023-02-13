@@ -1,0 +1,314 @@
+/* common */
+img {
+  vertical-align: bottom;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* body */
+
+/* header */
+
+header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+
+header nav,
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+
+header nav ul img {
+  vertical-align: middle;
+}
+
+header nav ul li {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact_btn.header {
+  background: #fff;
+  color: #000;
+  border-radius: 40px;
+  padding: 16px 48px 16px 48px;
+}
+
+/* top  */
+
+#top {
+  position: relative;
+}
+
+.top_img {
+  background: #000;
+}
+
+.top_img img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.top_copy {
+  color: #fff;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+}
+
+.top_copy p:first-child {
+  font-size: 46px;
+  margin-bottom: -42px;
+}
+
+.top_copy p:last-child {
+  font-size: 118px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* about */
+
+#about {
+  position: relative;
+  margin-top: 120px;
+}
+
+.back_about {
+  font-family: 'Poppins', sans-serif;
+  font-size: 118px;
+  color: #fff;
+  -webkit-text-stroke: 1px #222;
+  /* text-stroke: 1px #222; */
+  position: absolute;
+  top: -13%;
+  left: -1%;
+}
+
+.dot { 
+  width: 300px;
+  height: 120px;
+  background: radial-gradient(#bbb 15%, transparent 10%) 0 0 / 20px 20px;
+  z-index: -99;
+  position: absolute;
+}
+
+.dot.about01 {
+  top: -5%;
+  right: 0;
+}
+
+.dot.about02 {
+  top: 60%;
+  left: -10%;
+}
+
+.flex_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1016px;
+  margin: 0 auto;
+}
+
+.flex_wrapper .desc h2 {
+  line-height: 1.7;
+  font-size: 45px;
+  margin-bottom: 16px;
+}
+
+.flex_wrapper .desc p {
+  font-size: 14px;
+  color: #5D5D5D;
+  width: 440px;
+  line-height: 2;
+}
+
+.flex_wrapper .desc_img img {
+  width: 500px;
+}
+
+.line {
+  border-bottom: 2px solid #BBAD99;
+  opacity: .3;
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  left: 0;
+  transform: skewY(-25deg);
+  z-index: -99;
+  width: 100vw;
+}
+
+#strengths {
+  margin-top: 120px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.title p {
+  font-size: 13px;
+  color: #9C8B75;
+}
+
+.title h3 {
+  font-size: 32px;
+}
+
+#strengths .flex_wrapper li {
+  width: 300px;
+}
+
+#strengths .flex_wrapper li img  {
+  width: 300px;
+  margin: 24px 0px 24px 0px;
+}
+
+#strengths .flex_wrapper li p:first-of-type {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#strengths .flex_wrapper li p:last-child {
+  font-size: 13px;
+  color: #5D5D5D;
+}
+
+.btn {
+  width: 300px;
+  text-align: right;
+  padding: 18px 30px;
+  margin: 40px auto 0 auto;
+  display: table;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 68px;
+}
+
+.btn.contact {
+  color: #fff;
+  background: linear-gradient(to right, #D66E14, #D58C16);
+}
+
+.btn.contact .btn_after {
+  margin-left: 53px;
+}
+
+.btn_after::after {
+  content: "＞";
+  font-style: normal;
+}
+
+.wave {
+  width: 100vw;
+  vertical-align: bottom;
+  position: relative;
+  z-index: -99;
+}
+
+.wave.top {
+  transform: scaleX(-1);
+  margin-bottom: -60px;
+} 
+
+.wave.bottom {
+  transform: rotate(180deg) scaleX(-1);
+  margin-top: -80px;
+}
+
+#project {
+  background: #F5F3F1;
+}
+
+#project .flex_wrapper li  {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #666;
+}
+
+#project .flex_wrapper img li img:first-child {
+  width: 328px;
+}
+
+.inner_wap {
+  display: flex;
+  width: 328px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 24px 24px 48px 24px;
+}
+
+#project .inner {
+  text-align: center;
+}
+
+#project.inner img {
+  width: 25px;
+}
+
+#project .inner.center {
+  border-right: dashed 1px #E5E5E5;
+  border-left: dashed 1px #E5E5E5;
+  padding: 0 12px 0 12px ;
+}
+
+#project .inner p:first-of-type {
+  font-size: 14px;
+  color: #5D5D5D;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+#project .inner p:last-child {
+  font-size: 18px;
+  color: #9C8B75;
+  font-weight: bold;
+}
+
+span.yen {
+  font-size: 13px;
+}
+
+.btn.readmore {
+  color: #9C8B75;
+  background: none;
+  border: solid 1px #9C8B75;
+}
+
+.btn.readmore .btn_after {
+  margin-left: 58px;
+}
