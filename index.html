@@ -18,13 +18,26 @@
   <header>
     <nav>
       <h1 class="logo"><a href="#"><img src="img/logo.png" alt=""></a></h1>
-      <ul>
+      <ul class="pc-mode">
         <li><a href="#">会社概要</a></li>
         <li><a href="#">案件一覧</a></li>
         <li><a href="#">成功事例</a></li>
         <li><a href="#" class="contact_btn header">お問い合わせ</a></li>
       </ul>
+      <p id="open" class="sp-mode"><img src="img/open.png" alt=""></p>
     </nav>
+    <div class="overlay sp-mode">
+      <p id="close"><img src="img/close.png" alt=""></p>
+      <nav class="sp-menu">
+        <ul>
+          <li><a href="#"><img src="img/logo_black.png" alt=""></a></li>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">案件一覧</a></li>
+          <li><a href="#">成功事例</a></li>
+          <li><a href="#" class="btn contact">お問い合わせ<i class="btn_after"></i></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section #id="top">
@@ -40,10 +53,13 @@
   </section>
 
   <section id="about">
-    <p class="back_about">ABOUT</p>
+    <p class="back_about"><img src="img/about.png" alt=""></p>
     <div class="dot about01"></div>
     <div class="dot about02"></div>
     <div class="flex_wrapper">
+      <div class="decs_img sp-mode">
+        <img src="img/img_01.png" alt="">
+      </div>
       <div class="desc">
         <h2>
           M&ALOGOとは<br>
@@ -54,7 +70,7 @@
           サービス名とは士業専門のM&Aサービスです。国内最大級の税理士ネットワークでなんとかうまくやるつもりです。国内最大級の税理士ネットワークでなんとかうまくやるつもりです。国内最大級の税理士ネットワークでなんとかうまくやるつもりです。
         </p>
       </div>
-      <div class="decs_img">
+      <div class="decs_img pc-mode">
         <img src="img/img_01.png" alt="">
       </div>
     </div>
@@ -187,7 +203,7 @@
             </p>
           </div>
         </div>
-        <div class="number none">
+        <div class="number none pc-mode">
           <p>02</p>
           <div class="desc">
             <p>
@@ -203,7 +219,7 @@
           <i class="btn_after"></i>
         </a>
       </div>
-      <div class="decs_img">
+      <div class="decs_img pc-mode">
         <img src="img/img_05.png" alt="">
       </div>
     </div>
@@ -253,29 +269,46 @@
     <div class="flex_wrapper merit">
       <div class="desc_text">
         <h3><span class="gold big">M&A</span>でオーナー様が<br>得られるメリット</h3>
-        <ul>
-          <li class="merit_flex">
+        <ul class="pc-mode">
+          <li class="merit_flex appear" id="merit_btn01">
             <p><span class="gold big pop">01</span></p>
             <p><span class="gold">後継者</span>が見つかる！</p>
           </li>
-          <li class="merit_flex none">
+          <li class="merit_flex" id="merit_btn02">
             <p><span class="gold big pop">02</span></p>
             <p><span class="gold">顧客様との繋がり</span>を守れる！</p>
           </li>
-          <li class="merit_flex none">
+          <li class="merit_flex" id="merit_btn03">
             <p><span class="gold big pop">03</span></p>
             <p><span class="gold">従業員の雇用</span>を守れる！</p>
           </li>
-          <li class="merit_flex none">
+          <li class="merit_flex" id="merit_btn04">
             <p><span class="gold big pop">04</span></p>
             <p><span class="gold">潤沢なセカンドライフ資金</span>の確保！</p>
           </li>
         </ul>
       </div>
       <div class="desc_img">
-        <ul>
-          <li><p><img src="img/img06.png" alt=""></p></li>
+        <ul class="pc-mode">
+          <li id="merit_img01" class="img_visible"><p><img src="img/merit_img_01.png" alt=""></p></li>
+          <li id="merit_img02" class="img_hidden"><p><img src="img/merit_img_02.png" alt=""></p></li>
+          <li id="merit_img03" class="img_hidden"><p><img src="img/merit_img_03.png" alt=""></p></li>
+          <li id="merit_img04" class="img_hidden"><p><img src="img/merit_img_04.png" alt=""></p></li>
         </ul>
+        <div class="carousel_wrap">
+          <div id="carousel">
+            <ul class="sp-mode carousel_img">
+              <li id="slide_img01"><img src="img/slide_img01.png" alt=""></li>
+              <li id="slide_img02"><img src="img/slide_img02.png" alt=""></li>
+              <li id="slide_img03"><img src="img/slide_img03.png" alt=""></li>
+              <li id="slide_img04"><img src="img/slide_img04.png" alt=""></li>
+            </ul>
+            <button id="prev">&laquo;</button>
+            <button id="next">&raquo;</button>
+          </div>
+          <nav class="carousel_btn">
+          </nav>
+        </div>
       </div>
     </div>
   </section>
@@ -356,6 +389,11 @@
           <p class="inner_yellow">完全成果報酬</p>
           <p class="inner_white">だから安心！</p>
         </div>
+        <div class="zero_wrap sp-mode">
+          <p><img src="img/zero_01.png" alt=""></p>
+          <p><img src="img/zero_02.png" alt=""></p>
+          <p><img src="img/zero_03.png" alt=""></p>
+        </div>
         <div class="text_tel">
           <p>お電話でのお問い合わせ</p>
           <div class="text_tel_inner">
@@ -370,7 +408,7 @@
     </div>
     <div class="desc_right">
       <div class="text_right">
-        <div class="zero_wrap">
+        <div class="zero_wrap pc-mode">
           <p><img src="img/zero_01.png" alt=""></p>
           <p><img src="img/zero_02.png" alt=""></p>
           <p><img src="img/zero_03.png" alt=""></p>
@@ -409,7 +447,7 @@
           <div class="box_q">Q</div>
           <p>質問が入ります。質問が入ります。質問が入ります。質問が入ります。質問が入ります。</p>
         </dt>
-        <dd class="a_wrap none">
+        <dd class="a_wrap">
           <div class="box_a">A</div>
           <p>答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。</p>
         </dd>
@@ -419,7 +457,7 @@
           <div class="box_q">Q</div>
           <p>質問が入ります。質問が入ります。質問が入ります。質問が入ります。質問が入ります。</p>
         </dt>
-        <dd class="a_wrap none">
+        <dd class="a_wrap">
           <div class="box_a">A</div>
           <p>答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。</p>
         </dd>
@@ -429,7 +467,7 @@
           <div class="box_q">Q</div>
           <p>質問が入ります。質問が入ります。質問が入ります。質問が入ります。質問が入ります。</p>
         </dt>
-        <dd class="a_wrap none">
+        <dd class="a_wrap">
           <div class="box_a">A</div>
           <p>答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。</p>
         </dd>
@@ -439,7 +477,7 @@
           <div class="box_q">Q</div>
           <p>質問が入ります。質問が入ります。質問が入ります。質問が入ります。質問が入ります。</p>
         </dt>
-        <dd class="a_wrap none">
+        <dd class="a_wrap">
           <div class="box_a">A</div>
           <p>答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。</p>
         </dd>
@@ -451,7 +489,7 @@
     <div class="flex_wrapper">
       <div class="footer_left">
         <p><a href="#"><img src="img/logo.png" alt=""></a></p>
-        <small>Copyright 2023.All Rights Reserved</small>
+        <small class="pc-mode">Copyright 2023.All Rights Reserved</small>
       </div>
       <div class="footer_right">
         <nav>
@@ -462,11 +500,15 @@
             <li><a href="#">お問い合わせ</a></li>
           </ul>
         </nav>
-        <small><a href="">利用規約</a></small>
-        <small><a href="">プライバシーポリシー</a></small>
+        <div class="policy_wrap">
+          <small><a href="">利用規約</a></small>
+          <small><a href="">プライバシーポリシー</a></small>
+        </div>
       </div>
-    </div> 
+    </div>
+    <small class="sp-mode">Copyright 2023.All Rights Reserved</small>
   </footer>
   
+<script src="js/main.js"></script>
 </body>
 </html>
