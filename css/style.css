@@ -1350,6 +1350,8 @@ footer .flex_wrapper .footer_right small a {
 
   #carousel {
     position: relative;
+    width: 100vw;
+    overflow: hidden;
   }
 
   #carousel ul.carousel_img {
