@@ -1347,10 +1347,9 @@ footer .flex_wrapper .footer_right small a {
   /* ハンバーガー用 */
 
   /* カルーセル用 */
-
   #carousel {
     position: relative;
-    width: 100vw;
+    width: 90vw;
     overflow: hidden;
   }
 
@@ -1404,7 +1403,7 @@ footer .flex_wrapper .footer_right small a {
   .carousel_wrap nav button.current {
     background: #999;
   }
-
+  /* カルーセル用 */
 
 
 }
