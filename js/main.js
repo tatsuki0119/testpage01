@@ -123,7 +123,7 @@
       const button = document.createElement('button');
       button.addEventListener('click', () => {
         currentIndex = i;
-        
+        updateDots();
         updateButtons();
         moveSlides();
       });
@@ -134,7 +134,7 @@
     dots[0].classList.add('current');
   }
 
-  function updateDots () {
+  function updateDots() {
     dots.forEach(dot => {
       dot.classList.remove('current');
     });
