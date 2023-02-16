@@ -99,7 +99,7 @@
   const ul = document.querySelector('.carousel_img');
   const slides = ul.children;
   const dots = [];
-  var currentIndex = 0;
+  let currentIndex = 0;
 
   function updateButtons() {
     prev.classList.remove('hidden');
@@ -119,7 +119,7 @@
   }
 
   function setupDots() {
-    for (var i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
       const button = document.createElement('button');
       button.addEventListener('click', () => {
         currentIndex = i;
