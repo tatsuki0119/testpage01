@@ -1400,7 +1400,7 @@ footer .flex_wrapper .footer_right small a {
     margin-left: 8px;
   }
 
-  .carousel_wrap nav button.current {
+  .carousel_wrap nav .current {
     background: #999;
   }
   /* カルーセル用 */
